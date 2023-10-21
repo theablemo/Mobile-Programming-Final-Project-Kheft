@@ -156,8 +156,9 @@ class _BooksListScreenState extends State<BooksListScreen> {
                                           alignment: Alignment.topRight,
                                           child: Icon(
                                             Icons.sync_alt,
-                                            color:
-                                                Theme.of(context).accentColor,
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .secondary,
                                           ),
                                         ),
                                     ],
@@ -212,7 +213,9 @@ class _BooksListScreenState extends State<BooksListScreen> {
                                     "${Controller.books[index].price.toString()} \$",
                                     textAlign: TextAlign.end,
                                     style: TextStyle(
-                                        color: Theme.of(context).accentColor),
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .secondary),
                                   ),
                                 ),
                               ],

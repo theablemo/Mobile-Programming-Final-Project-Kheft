@@ -86,7 +86,8 @@ class VerficationScreen extends StatelessWidget {
                           content: new Row(
                             children: [
                               CircularProgressIndicator(
-                                  color: Theme.of(context).accentColor),
+                                  color:
+                                      Theme.of(context).colorScheme.secondary),
                               Container(
                                   margin: EdgeInsets.only(left: 7),
                                   child: Text("Loading...")),

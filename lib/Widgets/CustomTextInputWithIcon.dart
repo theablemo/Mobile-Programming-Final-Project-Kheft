@@ -29,7 +29,7 @@ class CustomTextInputWithIcon extends StatelessWidget {
             width: mediaQuery.size.width * widthCoefficient * 0.1,
             child: Icon(
               icon,
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).colorScheme.secondary,
             ),
           ),
           SizedBox(

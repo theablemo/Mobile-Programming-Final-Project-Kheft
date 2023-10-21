@@ -119,8 +119,9 @@ class BookmarkScreen extends StatelessWidget {
                                             alignment: Alignment.topRight,
                                             child: Icon(
                                               Icons.sync_alt,
-                                              color:
-                                                  Theme.of(context).accentColor,
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .secondary,
                                             ),
                                           ),
                                       ],
@@ -186,7 +187,9 @@ class BookmarkScreen extends StatelessWidget {
                                       "${Controller.user.bookmarkedBooks[index].price.toString()} \$",
                                       textAlign: TextAlign.end,
                                       style: TextStyle(
-                                          color: Theme.of(context).accentColor),
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .secondary),
                                     ),
                                   ),
                                 ],

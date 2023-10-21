@@ -26,8 +26,8 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         onPressed: () {
           Navigator.of(context).pushNamed(PublishBookScreen.routeAddress);
         },
-        backgroundColor: Theme.of(context).buttonColor,
-        splashColor: Theme.of(context).accentColor,
+        backgroundColor: Color.fromRGBO(161, 232, 240, 1),
+        splashColor: Theme.of(context).colorScheme.secondary,
         child: Icon(
           Icons.add,
           color: Colors.black,
@@ -45,7 +45,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         rightCornerRadius: 32,
         gapLocation: GapLocation.center,
         backgroundColor: Theme.of(context).cardColor,
-        inactiveColor: Theme.of(context).accentColor,
+        inactiveColor: Theme.of(context).colorScheme.secondary,
       ),
     );
   }

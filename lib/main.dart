@@ -24,9 +24,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primaryColor: Color.fromRGBO(33, 192, 245, 1),
-        buttonColor: Color.fromRGBO(161, 232, 240, 1),
         canvasColor: Color.fromRGBO(251, 251, 251, 1),
-        accentColor: Color.fromRGBO(119, 119, 119, 1),
         hintColor: Color.fromRGBO(177, 177, 177, 1),
         cardColor: Color.fromRGBO(226, 226, 226, 1),
         errorColor: Colors.redAccent[100],
@@ -64,6 +62,9 @@ class MyApp extends StatelessWidget {
               fontSize: 10,
               color: Color.fromRGBO(119, 119, 119, 1),
             )),
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          secondary: Color.fromRGBO(119, 119, 119, 1),
+        ),
       ),
       home: !signedIn ? SignInScreen() : BottomNavScreen(),
       routes: {

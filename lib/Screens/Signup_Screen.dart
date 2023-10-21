@@ -206,7 +206,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         width: mediaQuery.size.width * 0.8 * 0.1,
                         child: Icon(
                           Icons.cake,
-                          color: Theme.of(context).accentColor,
+                          color: Theme.of(context).colorScheme.secondary,
                         ),
                       ),
                       SizedBox(
@@ -287,7 +287,9 @@ class _SignupScreenState extends State<SignupScreen> {
                             content: new Row(
                               children: [
                                 CircularProgressIndicator(
-                                    color: Theme.of(context).accentColor),
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .secondary),
                                 Container(
                                     margin: EdgeInsets.only(left: 7),
                                     child: Text("Loading...")),
